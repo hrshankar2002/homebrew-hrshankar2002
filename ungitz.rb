@@ -5,11 +5,11 @@
 class Ungitz < Formula
   desc ""
   homepage "https://github.com/hrshankar2002/ungitz"
-  version "1.1"
+  version "1.2"
 
   on_macos do
-    url "https://github.com/hrshankar2002/ungitz/releases/download/v1.1/ungitz_1.1_darwin_all.tar.gz"
-    sha256 "a64d60218c7390b9ec035319b57f3e85d80ef2f9c812d3c6e8f16e66dc061915"
+    url "https://github.com/hrshankar2002/ungitz/releases/download/v1.2/ungitz_1.2_darwin_all.tar.gz"
+    sha256 "c999db6585b054605f3adaff0186a69dad0a0697082da56d35e09229b3bb7b81"
 
     def install
       bin.install "ungitz"
@@ -18,16 +18,16 @@ class Ungitz < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hrshankar2002/ungitz/releases/download/v1.1/ungitz_1.1_linux_arm64.tar.gz"
-      sha256 "860e342c782a419d68fb7547783ecd02aaba6f50040ca8171c8a9deed83ca333"
+      url "https://github.com/hrshankar2002/ungitz/releases/download/v1.2/ungitz_1.2_linux_arm64.tar.gz"
+      sha256 "373ea2859332d94302846dcdb9ad9c9ce4b6a955d0142b4021f4cb0665cdaf77"
 
       def install
         bin.install "ungitz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hrshankar2002/ungitz/releases/download/v1.1/ungitz_1.1_linux_amd64.tar.gz"
-      sha256 "66219cb303cb8ca4ef89c8164cee3a9b1916d162114b3049e63a66538e125cd9"
+      url "https://github.com/hrshankar2002/ungitz/releases/download/v1.2/ungitz_1.2_linux_amd64.tar.gz"
+      sha256 "3b043008c03af4ad0362f802b28624d52fd45144cade7cb966da9da2f3861dd4"
 
       def install
         bin.install "ungitz"
